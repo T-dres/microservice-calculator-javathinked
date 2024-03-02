@@ -1,0 +1,412 @@
+{
+	"info": {
+		"_postman_id": "0afcae42-6afa-4a8c-85c1-cdd416738b58",
+		"name": "microservice-calculator-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15871510"
+	},
+	"item": [
+		{
+			"name": "services",
+			"item": [
+				{
+					"name": "doAddition",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"x\": 10,\r\n    \"y\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8091/api/addition",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"api",
+								"addition"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAdditions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/addition",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"addition"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "doSubtraction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"x\": 20,\r\n    \"y\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8092/api/subtraction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8092",
+							"path": [
+								"api",
+								"subtraction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSubtractions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8092/api/subtraction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8092",
+							"path": [
+								"api",
+								"subtraction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "doMultiplication",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"x\": 20,\r\n    \"y\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8093/api/multiplication",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8093",
+							"path": [
+								"api",
+								"multiplication"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getMultiplications",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8093/api/multiplication",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8093",
+							"path": [
+								"api",
+								"multiplication"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "doDivision",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"x\": 20,\r\n    \"y\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8094/api/division",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8094",
+							"path": [
+								"api",
+								"division"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDivisions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8094/api/division",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8094",
+							"path": [
+								"api",
+								"division"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "gateway",
+			"item": [
+				{
+					"name": "gateway_doAddition",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"x\": 10,\r\n    \"y\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8762/api/addition",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8762",
+							"path": [
+								"api",
+								"addition"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "gateway_getAdditions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8762/api/addition",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8762",
+							"path": [
+								"api",
+								"addition"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "gateway_doSubtraction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"x\": 35,\r\n    \"y\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8762/api/subtraction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8762",
+							"path": [
+								"api",
+								"subtraction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "gateway_getSubtractions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8762/api/subtraction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8762",
+							"path": [
+								"api",
+								"subtraction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "gateway_doMultiplication",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"x\": 10,\r\n    \"y\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8762/api/multiplication",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8762",
+							"path": [
+								"api",
+								"multiplication"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "gateway_getMultiplications",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8762/api/multiplication",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8762",
+							"path": [
+								"api",
+								"multiplication"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "gateway_doDivision",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"x\": 100,\r\n    \"y\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8762/api/division",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8762",
+							"path": [
+								"api",
+								"division"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "gateway_getDivisions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8762/api/division",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8762",
+							"path": [
+								"api",
+								"division"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
