@@ -1,5 +1,5 @@
 # use the minimal adoptjdk version on linux
-FROM openjdk:17-jdk-alpine
+FROM eclipse-temurin:24-jdk
 # create an installation directory
 WORKDIR /opt/app
 # copy the jar file in the container

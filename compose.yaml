@@ -7,14 +7,14 @@ services:
       - "8761:8761"
     restart: always
 
-  configuration-service:
-    build:
-      context: configuration-service
-      dockerfile: Dockerfile
-    ports:
-      - "8888:8888"
-    depends_on:
-      - discovery-service
+#  configuration-service:
+#    build:
+#      context: configuration-service
+#      dockerfile: Dockerfile
+#    ports:
+#      - "8888:8888"
+#    depends_on:
+#      - discovery-service
 
   gateway-service:
     build:
@@ -46,7 +46,7 @@ services:
       - "8091:8091"
     depends_on:
       - discovery-service
-      - configuration-service
+#      - configuration-service
       - gateway-service
       - database
 
@@ -58,7 +58,7 @@ services:
       - "8092:8092"
     depends_on:
       - discovery-service
-      - configuration-service
+#      - configuration-service
       - gateway-service
       - database
 
@@ -70,7 +70,7 @@ services:
       - "8093:8093"
     depends_on:
       - discovery-service
-      - configuration-service
+#      - configuration-service
       - gateway-service
       - database
 
@@ -82,7 +82,7 @@ services:
       - "8094:8094"
     depends_on:
       - discovery-service
-      - configuration-service
+#      - configuration-service
       - gateway-service
       - database
 
@@ -94,7 +94,7 @@ services:
       - "8095:8095"
     depends_on:
       - discovery-service
-      - configuration-service
+#      - configuration-service
       - gateway-service
       - database
 
